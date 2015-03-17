@@ -1,0 +1,137 @@
+<template name="signature">
+<div class="row" style="margin-top: 50px;">
+  <form class="col s8">
+    <div class="row">
+      <div class="input-field col s6">
+      	<i class="mdi-action-account-circle prefix"></i>
+        <input id="first" type="text" class="validate" data-bind="value: first">
+        <label for="first" class="active">Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="title" type="text" class="validate" data-bind="value: title">
+        <label for="title" class="active">Title</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+      	<i class="mdi-communication-business prefix"></i>
+        <input id="company" type="text" class="validate" data-bind="value: company">
+        <label for="company" class="active">Company</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+      	<i class="mdi-maps-pin-drop prefix"></i>
+        <input id="address" type="text" class="validate" data-bind="value: address">
+        <label for="address" class="active">Address</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="address2" type="text" class="validate"  data-bind="value: address2">
+        <label for="address2" class="active">Address2</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+      	<i class="mdi-notification-phone-forwarded prefix"></i>
+        <input id="phone1" type="text" class="validate" data-bind="value: phone1">
+        <label for="phone1" class="active">Phone (switchboard)</label>
+      </div>
+      <div class="input-field col s6">
+      	<i class="mdi-communication-phone prefix"></i>
+        <input id="phone2" type="text" class="validate"  data-bind="value: phone2">
+        <label for="phone2" class="active">Phone (direct)</label>
+      </div>
+    </div>
+  </form>
+  <div class="col s4" id="mailsig">
+<table border="0" cellspacing="0" cellpadding="0" style="font-family:Arial;">
+<tbody>
+<tr><td data-bind="text: first" style="padding-bottom:5px;font-size:14px;letter-spacing:0px;font-family:Arial;">Max Malm</td></tr>
+<tr><td data-bind="text: title" style="padding-bottom:20px;font-size:9px;letter-spacing:1px;text-transform:uppercase;font-weight:bold;font-family:Arial;">CEO</td></tr>
+<tr><td data-bind="text: company" style="padding-bottom:3px;font-size:11px;font-family:Arial;">Abstracta AB</td></tr>
+<tr><td data-bind="text: address" style="padding-bottom:3px;font-size:11px;font-family:Arial;">Lammengatan 2</td></tr>
+<tr><td data-bind="text: address2" style="padding-bottom:3px;font-size:11px;font-family:Arial;">36030 Lammhult </td></tr>
+<tr><td data-bind="text: phone1" style="padding-bottom:3px;font-size:11px;font-family:Arial;">Office +46 472 26 96 90</td></tr>
+<tr><td data-bind="text: phone2" style="padding-bottom:3px;font-size:11px;font-family:Arial;">Direct +46 472 26 96 90</td></tr>
+<tr><td><a href="https://www.facebook.com/abstractaab"><img src="http://sig.beploy.se/signature.png"></a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!--
+	<div class="row">
+		<form class="form-horizontal">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="input-field">
+				<label class="col-sm-4 control-label">Name</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" data-bind="value: first"/>
+				</div>
+			</div>
+			<div class="input-field">
+				<label class="col-sm-4 control-label">Title</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" data-bind="value: title"/>
+				</div>
+			</div>
+			<div class="input-field">
+				<label class="col-sm-4 control-label">Company</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" data-bind="value: company"/>
+				</div>
+			</div>
+			<div class="input-field">
+				<label class="col-sm-4 control-label">Address</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" data-bind="value: address"/>
+				</div>
+			</div>
+			<div class="input-field">
+				<label class="col-sm-4 control-label">Address 2</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" data-bind="value: address2"/>
+				</div>
+			</div>
+			<div class="input-field">
+				<label class="col-sm-4 control-label">Phone (switchboard)</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" data-bind="value: phone1"/>
+				</div>
+			</div>
+			<div class="input-field">
+				<label class="col-sm-4 control-label">Phone (direct)</label>
+				<div class="col-sm-8">
+					<input class="form-control" type="text" data-bind="value: phone2"/>
+				</div>
+			</div>
+		</div>
+		</form>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			
+			<div id="mailsig">
+<table border="0" cellspacing="0" cellpadding="0" style="font-family:Arial;">
+<tbody>
+<tr><td data-bind="text: first" style="padding-bottom:5px;font-size:14px;letter-spacing:0px;font-family:Arial;">Max Malm</td></tr>
+<tr><td data-bind="text: title" style="padding-bottom:20px;font-size:9px;letter-spacing:1px;text-transform:uppercase;font-weight:bold;font-family:Arial;">CEO</td></tr>
+<tr><td data-bind="text: company" style="padding-bottom:3px;font-size:11px;font-family:Arial;">Abstracta AB</td></tr>
+<tr><td data-bind="text: address" style="padding-bottom:3px;font-size:11px;font-family:Arial;">Lammengatan 2</td></tr>
+<tr><td data-bind="text: address2" style="padding-bottom:3px;font-size:11px;font-family:Arial;">36030 Lammhult </td></tr>
+<tr><td data-bind="text: phone1" style="padding-bottom:3px;font-size:11px;font-family:Arial;">Office +46 472 26 96 90</td></tr>
+<tr><td data-bind="text: phone2" style="padding-bottom:3px;font-size:11px;font-family:Arial;">Direct +46 472 26 96 90</td></tr>
+<tr><td><a href="https://www.facebook.com/abstractaab"><img src="http://sig.beploy.se/signature.png"></a></td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+			<button type="button" class="btn btn-primary copy-button" id="">Copy signature</button>
+		</div>
+	</div>
+-->
+<!--
+
+
+
+
+-->
+</template>
